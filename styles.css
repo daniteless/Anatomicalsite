@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #252525;
+}
+
+header{
+    display: flex;
+    
+    
+}
+
+#sexo{
+    display: flex;
+   margin: auto;
+    
+}
+
+li{
+    padding: 30px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 18px 30px;
+    
+}
+
+
