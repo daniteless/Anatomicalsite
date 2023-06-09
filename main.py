@@ -7,11 +7,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    return render_template("index.html")
 
 @app.route("/contatos")
 def contatos():
-    return render_template("contatos.html")
+    return render_template("sobre.html")
+
+@app.route("/politica")
+def contatos():
+    return render_template("politica.html")
+
+@app.route("/download")
+def contatos():
+    return render_template("dowload.html")
 
 # site no ar
 if __name__ == "__main__":
