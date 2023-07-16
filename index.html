@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Responsivo</title>
+    <title>Anatomical</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://your-font-file-host/">
     <link rel="stylesheet" href="https://your-font-file-host/inter.css">
@@ -12,28 +12,51 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="(aqui a logo)" alt="">
+            <img src="anatomical/logo.jpg">
         </div>
         <button>&#9776;</button>
         <ul>
             <li>
-                <p>Sobre</p>
+                <a href="sobre.html">Sobre</a>
             </li>
             <li>
-                <p>Download</p>
+                <a href="dowload.html">Download</a>
             </li>
             <li>
-                <p>Política</p>
+                <a href="politica.html">Política</a>
             </li>
             <li>
-                <p>Quem somos</p>
+                <a>Quem somos</a>
             </li>
         </ul>
     </nav>
-    <div class="div_de_texto">
-        <h2>Anatomical</h2>
-        <p class="beta">beta 1.0</p>
-        <p class="treino">Vá alem do seu treino</p>
+    <div class="body">
+        <div class="sexo div_de_texto">
+            <h2>Anatomical</h2>
+            <p class="beta">beta 1.0</p>
+            <p class="treino">Vá alem do seu treino</p>
+            <!--imagem aqui-->
+        </div>
+        <div class="sexo second">
+            <p>alala</p>
+            <img src="C:\Users\Fabio\Downloads/david2.png">
+        </div>
+        <div class="sexo third">
+            <p>alala</p>
+        </div>
     </div>
+    <script>
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+    </script>
 </body>
 </html>
