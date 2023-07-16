@@ -22,9 +22,9 @@ nav {
     justify-content: center
 }
 
-h1,
-p {
+a {
     color: #FFFFFF;
+    text-decoration-line: blink;
 }
 
 nav,
@@ -35,66 +35,105 @@ ul {
 
 li {
     padding: 0 50px;
+    
 }
-button{
+
+button {
     background-color: transparent;
     border: none;
     color: #FFFFFF;
     font-size: 36px;
-    position:absolute;
+    position: absolute;
     right: 10px;
     top: 10px;
     display: none;
 }
-li:hover,
-h1:hover,
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-@media (max-width: 700px) {
-    nav, ul{
-        flex-direction: column;
-    }
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-    h1 {
-        margin: 10px;
-    }
-    nav{
-        padding: 0;
-        align-items: flex-start;
-    }
-    button{
-        display: flex;
-    }
-    li, u{
-        width: 100%;
-    }
+ 
+.div_de_texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.div_de_texto{
-    justify-content: center;
-    align-items: center;
-}
 h2 {
-    padding-left: 700px;
     font-size: 500%;
     color: #FFFFFF;
     margin-bottom: 0px;
 }
 
 .beta {
-    padding-left: 860px;
     color: #DF4C0C;
     font-size: 180%;
 }
 
 .treino {
-    padding-left: 830px;
     color: #BEBEBE;
+}
+.body {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.sexo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+    scroll-snap-align: start;
+}
+.sexo img{
+    width: 350px;
+}
+.second {
+    
+}
+
+/*aqui a logo*/
+button:hover,
+li:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
+    .div_de_texto{
+        text-align: center;
+        
+        
+    }
 }
